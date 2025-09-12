@@ -1,0 +1,58 @@
+import React from 'react';
+
+import ingredient from '../ingredient.png'
+import { useNavigate } from 'react-router-dom';
+
+
+const DishCard = ({ dish, isSelected, onToggle, onViewIngredients, onReadMore }) => {
+  const navigate = useNavigate();
+  return (
+  
+ <div className='flex justify-between m-4'>
+    <div className='flex flex-col'>
+        <div className='flex items-center space-x-2' > 
+            <h1 className='font-bold text-black font-sans leading-2'>{dish.name}</h1>
+              <button
+           
+            className={` flex items-center justify-center w-4 h-4 rounded-md border-2 font-medium transition-colors duration-200 
+                ${dish.veg ?" border-green-500":"border-red-500"}  `}
+          >
+            <span
+              className={`rounded-full w-2 h-2 inline-block transition-colors    ${dish.veg ?" bg-green-500":"bg-red-500"} `}
+            ></span>
+          </button>
+            
+        </div>
+        <h2 className='text-[#7E7E7E] text-xs'>
+            {dish.fullDescription.slice(0,60)} <button  onClick={() => onReadMore(dish)} className='font-semibold'>...ReadMore</button>
+        </h2>
+
+        <div className='p-1 flex items-center '>
+            <img src={ingredient} alt="ingredeint" className='w-4 h-4 mr-2 inline-block' />
+            <button className='text-[#FF8800] font-bold font-sans'    onClick={() => navigate(`/dishes/${dish.id}/ingredients`)}>Ingredient</button>
+        
+        </div>
+
+    </div>
+
+<div className="relative inline-block">  {/* Added inline-block for better flow */}
+  <img 
+    src={dish.image} 
+    alt={dish.name} 
+    className=" max-w-[100px] h-[100px] rounded-[12px] object-cover opacity-100 rotate-0"  // Integrated your styles
+  />
+  <button
+    onClick={() => onToggle(dish.id)}
+    className={`absolute -bottom-[12px] left-1/2 -translate-x-1/2 -translate-y-1/2  md:-translate-y-0 px-3 py-2 rounded-md bg-white font-semibold shadow-lg whitespace-nowrap transition-colors z-10 ${
+      isSelected ? 'text-[#FF941A]' : 'text-[#73AE78]'
+    }`}
+  >
+    {isSelected ? 'Remove' : 'Add +'}
+  </button>
+</div>
+ </div>
+
+  );
+};
+
+export default DishCard;
