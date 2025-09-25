@@ -114,7 +114,7 @@ const IngredientModal = () => {
 
             {/* Ingredients Section */}
             <div>
-              <h3 className="text-[18px] font-bold text-black mb-2">Ingredients</h3>
+              <h3 className="text-[18px] font-bold text-black mb-2 font-sans">Ingredients</h3>
               <p className="text-sm text-gray-500 mb-3">For 2 people</p>
                   <hr className="borde-1 border-[#CECECE] mb-4" />
               <ul className="space-y-2">

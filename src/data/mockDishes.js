@@ -2,10 +2,10 @@ export const mockDishes = {
   starter: [
     { 
       id: 1, 
-      name: 'Bruschetta', 
+      name: 'Fried Avacado Tacos...', 
       description: 'Fresh tomatoes on toasted bread', 
-      fullDescription: 'Homemade bruschetta comes together in no time. Sun-ripened tomatoes, fresh basil, and high-quality balsamic vinegar are key ingredients in this summer appetizer. Slice the bread on the diagonal at least ¼-inch thick or more to make an oval shape. Toss tomatoes with basil, balsamic vinegar, olive oil, salt, and pepper for the most flavorful results. Grill or toast the bread, rub with garlic, and top with the tomato mixture just before serving to avoid sogginess.',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6RU9QlUgqB3Clum36-mdNQK0XKSMdf471Xg&s', 
+      fullDescription: 'Panco fried avocado, Mayo, panco fried avocado, Mayo, Panco fried avocadoavocado, Mayo, Panco fried avocado....',
+      image: '/fried.png', 
       veg: true, 
       ingredients: ['Tomatoes: 200g', 'Bread: 4 slices', 'Basil: 10 leaves'] 
     },
@@ -41,39 +41,39 @@ export const mockDishes = {
   'main course': [
     { 
       id: 5, 
-      name: 'Pasta Primavera', 
-      description: 'Veggie pasta in light sauce', 
-      fullDescription: 'Pasta Primavera celebrates spring veggies like asparagus, peas, and zucchini sautéed in garlic and olive oil. Toss with al dente pasta and a light lemon cream sauce. Finish with Parmesan and fresh herbs for a vibrant, colorful dish that’s fresh and satisfying.',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJmoNLee-52rCFuDlp7VRiIN62Mit6zag8Cw&s', 
+      name: 'Tandoori Chicken', 
+      description: 'Tandoori chicken is a dish made from chic.... Read more', 
+      fullDescription: 'Tandoori chicken is a dish made from chic, and zucchini sautéed in garlic and olive oil. Toss with al dente pasta and a light lemon cream sauce. Finish with Parmesan and fresh herbs for a vibrant, colorful dish that’s fresh and satisfying.',
+      image: '/tandoori.png', 
       veg: true, 
       ingredients: ['Pasta: 300g', 'Veggies: 200g', 'Sauce: 100ml'] 
     },
     { 
       id: 6, 
-      name: 'Grilled Steak', 
+      name: 'Dak Makhni', 
       description: 'Juicy steak with herbs', 
-      fullDescription: 'Grilled steak starts with a simple rub of salt, pepper, and garlic. Sear over high heat for a crusty exterior while keeping the inside juicy (aim for 130°F internal). Rest and slice against the grain. Pair with chimichurri or herb butter for ultimate flavor.',
-      image: 'https://iowagirleats.com/wp-content/uploads/2024/09/Perfect-Grilled-Steak-with-Herb-Butter-iowagirleats-Featured-1200x2-1.jpg', 
+      fullDescription: 'Dal makhani is an Indian dish original, and garlic. Sear over high heat for a crusty exterior while keeping the inside juicy (aim for 130°F internal). Rest and slice against the grain. Pair with chimichurri or herb butter for ultimate flavor.',
+      image: '/makhani.png', 
       veg: false, 
       ingredients: ['Steak: 400g', 'Herbs: to taste', 'Oil: 20ml'] 
     },
     { 
       id: 7, 
-      name: 'Veggie Stir Fry', 
+      name: 'Cabbage', 
       description: 'Mixed veggies with rice', 
-      fullDescription: 'Veggie stir fry is quick and customizable. Sauté garlic and ginger, add broccoli, carrots, bell peppers, and snap peas. Toss with soy sauce, sesame oil, and a touch of honey. Serve over rice for a healthy, colorful meal ready in under 20 minutes.',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3E4tqWhYJxpf0gusDvjsMu2JzSCwU97kfBw&s', 
+      fullDescription: 'Cabbage, comprising several cultivars .... dd broccoli, carrots, bell peppers, and snap peas. Toss with soy sauce, sesame oil, and a touch of honey. Serve over rice for a healthy, colorful meal ready in under 20 minutes.',
+      image: '/cabbage.png', 
       veg: true, 
       ingredients: ['Veggies: 400g', 'Rice: 200g'] 
     },
     { 
       id: 8, 
-      name: 'Salmon Fillet', 
-      description: 'Baked salmon with lemon', 
-      fullDescription: 'Baked salmon fillet is simple: Season with lemon, garlic, and herbs, then bake at 375°F until flaky (about 12-15 minutes). For extra flavor, marinate in olive oil and dill. Serve with asparagus or quinoa for a light, omega-rich dinner.',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE2kXgxEL9TDN1euYjxi4IKnG5djSvHPGy3A&s', 
+    name: 'Dak Makhni', 
+      description: 'Juicy steak with herbs', 
+      fullDescription: 'Dal makhani is an Indian dish original, and garlic. Sear over high heat for a crusty exterior while keeping the inside juicy (aim for 130°F internal). Rest and slice against the grain. Pair with chimichurri or herb butter for ultimate flavor.',
+      image: '/makhani.png', 
       veg: false, 
-      ingredients: ['Salmon: 300g', 'Lemon: 1'] 
+      ingredients: ['Steak: 400g', 'Herbs: to taste', 'Oil: 20ml'] 
     },
   ],
   dessert: [

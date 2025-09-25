@@ -11,7 +11,7 @@ const DishCard = ({ dish, isSelected, onToggle, onViewIngredients, onReadMore })
  <div className='flex justify-between m-4'>
     <div className='flex flex-col'>
         <div className='flex items-center space-x-2' > 
-            <h1 className='font-bold text-black font-sans leading-2'>{dish.name}</h1>
+            <h1 className='font-bold text-sm l tracking-normal text-black font-sans leading-none'>{dish.name}</h1>
               <button
            
             className={` flex items-center justify-center w-4 h-4 rounded-md border-2 font-medium transition-colors duration-200 
@@ -35,15 +35,15 @@ const DishCard = ({ dish, isSelected, onToggle, onViewIngredients, onReadMore })
 
     </div>
 
-<div className="relative inline-block">  {/* Added inline-block for better flow */}
+<div className="relative inline-block ">  {/* Added inline-block for better flow */}
   <img 
     src={dish.image} 
     alt={dish.name} 
-    className=" max-w-[100px] h-[100px] rounded-[12px] object-cover opacity-100 rotate-0"  // Integrated your styles
+    className="  max-w-[100px] h-[100px] rounded-[12px] object-cover object-center opacity-100 rotate-0"  // Integrated your styles
   />
   <button
     onClick={() => onToggle(dish.id)}
-    className={`absolute -bottom-[12px] left-1/2 -translate-x-1/2 -translate-y-1/2  md:-translate-y-0 px-3 py-2 rounded-md bg-white font-semibold shadow-lg whitespace-nowrap transition-colors z-10 ${
+    className={`absolute -bottom-[12px] left-1/2 -translate-x-1/2 -translate-y-1/2  -translate-y-0 px-3 py-2 rounded-md bg-white font-semibold shadow-lg whitespace-nowrap transition-colors z-10 ${
       isSelected ? 'text-[#FF941A]' : 'text-[#73AE78]'
     }`}
   >
