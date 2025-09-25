@@ -29,7 +29,7 @@ const DishCard = ({ dish, isSelected, onToggle, onViewIngredients, onReadMore })
 
         <div className='p-1 flex items-center '>
             <img src={ingredient} alt="ingredeint" className='w-4 h-4 mr-2 inline-block' />
-            <button className='text-[#FF8800] font-bold font-sans'    onClick={() => navigate(`/dishes/${dish.id}/ingredients`)}>Ingredient</button>
+            <button className='text-[#FF8800] font-bold font-sans text-xs'    onClick={() => navigate(`/dishes/${dish.id}/ingredients`)}>Ingredient</button>
         
         </div>
 
