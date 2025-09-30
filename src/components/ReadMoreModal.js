@@ -11,10 +11,10 @@ const ReadMoreModal = ({ isOpen, dish, onClose, onToggle, selectedDishes ,onView
     <div className="fixed inset-0 z-50 flex items-end justify-center">
    
       <div 
-        className="bg-white w-full max-w-md rounded-3xl p-6 shadow-2xl transform transition-all duration-300 ease-in-out z-[60]"
+        className="bg-white w-full max-w-md rounded-t-3xl p-6 shadow-2xl transform transition-all duration-300 ease-in-out z-[60]"
         style={{ maxHeight: '50vh', overflowY: 'auto' }}
       >
-        <img src={dish.image} alt={dish.name} className="w-full h-40 object-cover rounded-t-3xl mb-4" />
+        <img src={dish.image} alt={dish.name} className="w-full h-40 object-cover rounded-3xl mb-4" />
        
       
         <div className="flex justify-between items-center mb-4 relative">
@@ -40,7 +40,7 @@ const ReadMoreModal = ({ isOpen, dish, onClose, onToggle, selectedDishes ,onView
           </button>
         </div>
         
-        <p className="text-gray-600 mb-4 font-sans"> <span className='font-bold text-black'>North Indian</span> {dish.fullDescription.slice(0, 120)}</p>
+        <p className="text-gray-600 mb-4 font-sans"> <span className='font-bold text-black'>North Indian</span> {dish.description.slice(0, 120)}</p>
          <div className='p-1 flex items-center '>
             <img src={ingredient} alt="ingredeint" className='w-4 h-4 mr-2 inline-block' />
             <button className='text-[#FF8800] font-bold font-sans'  onClick={() => onViewIngredients(dish)}>Ingredient</button>
