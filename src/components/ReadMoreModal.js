@@ -14,7 +14,7 @@ const ReadMoreModal = ({ isOpen, dish, onClose, onToggle, selectedDishes ,onView
         className="bg-white w-full max-w-md rounded-t-3xl p-6 shadow-2xl transform transition-all duration-300 ease-in-out z-[60]"
         style={{ maxHeight: '50vh', overflowY: 'auto' }}
       >
-        <img src={dish.image} alt={dish.name} className="w-full h-40 object-cover rounded-3xl mb-4" />
+        <img src={dish.category.image} alt={dish.name} className="w-full h-40 object-cover rounded-3xl mb-4" />
        
       
         <div className="flex justify-between items-center mb-4 relative">

@@ -63,7 +63,7 @@ const SummaryScreen = () => {
               {dishes.map((dish) => (
                 <div key={dish.id} className="flex flex-row p-3 bg-gray-50 rounded-md">
                   <img
-                    src={dish.image || 'https://via.placeholder.com/64'}
+                    src={dish.category.image || 'https://via.placeholder.com/64'}
                     alt={dish.name}
                     className="w-16 h-16 rounded-md object-cover mr-3"
                   />

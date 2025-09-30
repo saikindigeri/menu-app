@@ -130,7 +130,7 @@ const IngredientModal = () => {
 
           <div className="absolute top-0 right-0 w-32 h-32 sm:w-32 sm:h-32 lg:w-32 lg:h-32 xl:w-32 xl:h-32">
             <img
-              src={dish.image || 'https://via.placeholder.com/128'}
+              src={dish.category.image || 'https://via.placeholder.com/128'}
               alt={dish.name}
               className="w-full h-full object-cover rounded-lg shadow-md"
             />
